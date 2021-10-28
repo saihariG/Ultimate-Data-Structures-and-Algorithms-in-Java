@@ -32,33 +32,33 @@ Handwritten notes will be uploaded soon !
 
 ## Table of Contents
 
-###Arrays
+### Arrays
 * Integer Reverse
 * Smallest Difference
 * kadanes Algorithm
 
-###Sorting
+### Sorting
 * Bubble Sort
 * Insertion Sort
 * Selection Sort
 * Merge Sort
 * Quick Sort
 * Count Sort
-###Searching
+### Searching
 * Linear Search
 * Binary Search
 * First Occurrence
 * Last Occurrence
 * Number Of Occurrences
 
-###Matrix
+### Matrix
 * Search Sorted Matrix
-###Linked Lists
+### Linked Lists
 * Singly Linked Lists
 * Doubly Linked Lists
 * Circular Singly Linked Lists
 * Circular Doubly Linked Lists
-###Stack
+### Stack
 * Stack implementation using Array
 * Stack implementation using Linked Lists
 * Infix to Postfix
@@ -67,40 +67,40 @@ Handwritten notes will be uploaded soon !
 * Postfix to Infix
 * Prefix & Postfix evaluation
 * Balanced Paranthesis
-###Queue
+### Queue
 * Queue Implementation using Array
 * Queue Implementation using Linked Lists
 * Circular Queue using Array
 * Circular Queue using Linked Lists
 * Double Ended Queues
-###Trees
+### Trees
 * Binary Tree
 * Binary Search Tree
 * Expression Tree
-###Heap
+### Heap
 * Max Heap
 * Min Heap
-###Trie
+### Trie
 * Trie Implementation
 * Prefix String Count
-###Disjoint sets
+### Disjoint sets
 * Union and Find
 * Union by Rank and Find by Path Compression
-###Graphs
+### Graphs
 
-####Graph Representation
+#### Graph Representation
 * Adjacency Matrix
 * Adjacency Lists
-####Graph Traversal
+#### Graph Traversal
 * Breadth First Search
 * Depth First Search
-####Cycle Detection
+#### Cycle Detection
 * Detect Cycle in Directed Graph
 * Detect Cycle in UnDirected Graph
-####Minimum Spanning Trees
+#### Minimum Spanning Trees
 * Prims Algorithm 
 * Kruskals Algorithm
-####Single Source Shortest Path
+#### Single Source Shortest Path
 * Dijikstra's Algorithm
 * BellmanFord Algorithm
 #### All Pair Shortest Path
