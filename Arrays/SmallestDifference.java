@@ -1,2 +1,4 @@
-package Arrays;public class SmallestDifference {
+package Arrays;
+
+public class SmallestDifference {
 }

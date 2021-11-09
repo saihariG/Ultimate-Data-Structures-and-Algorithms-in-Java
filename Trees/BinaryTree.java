@@ -198,8 +198,6 @@ public class BinaryTree {
                 queue.offer(temp.right);
             }
         }
-
-
     }
 
     public static void main(String[] args) {

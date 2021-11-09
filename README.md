@@ -1,12 +1,8 @@
 # Ultimate Data Structures and Algorithms in Java
 This repository contains code implementation for all data Structures and algorithms, necessary for coding interviews
-
-<a href="https://www.paypal.com/paypalme/saiharig">
-    <img src="https://img.shields.io/badge/Donate-PayPal-green.svg?logo=paypal&style=flat-square" height="20" alt="Donate">
-</a>
-
+```
 Handwritten notes will be uploaded soon !
-
+```
 ## Ultimate 90 day Study Plan
 
 | Day       | Topics  |
