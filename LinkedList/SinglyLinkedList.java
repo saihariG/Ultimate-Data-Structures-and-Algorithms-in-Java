@@ -154,7 +154,7 @@ public class SinglyLinkedList {
         return head;
     }
 
-    private void getNthNodeFromEnd(int n) {
+    private void getNthNodeFromEnd1(int n) {
 
         if(head == null) {
 
@@ -187,6 +187,26 @@ public class SinglyLinkedList {
         }
 
         System.out.println(mainPtr.data);
+    }
+
+    private static int getNthNodeFromEnd2(int positionFromTail) {
+        int index = 0;
+
+        ListNode current = head;
+        ListNode result = head;
+
+        while(current != null)
+        {
+            current = current.next;
+
+            if(index > positionFromTail)
+            {
+                result=result.next;
+            }
+            index++;
+        }
+
+        return result.data;
     }
 
     private ListNode reverseList() {
@@ -250,6 +270,54 @@ public class SinglyLinkedList {
 
         return false;
     }
+
+
+    static boolean compareLists(ListNode head1, ListNode head2) {
+
+        ListNode current1 = head1;
+        ListNode current2 = head2;
+
+        int length1 = 0;
+        int length2 = 0;
+
+        while(current1 != null && current2 != null) {
+            if(current1.data != current2.data) {
+                return false;
+            }
+            length1++;
+            length2++;
+
+            current1 = current1.next;
+            current2 = current2.next;
+        }
+
+        return length1 == length2;
+
+    }
+
+    public static ListNode removeDuplicates(ListNode head) {
+
+        // if list is empty or if list contains a single node
+        if(head == null || head.next == null){
+            return head;
+        }
+
+        // having a reference for head node and then manipulating it further
+        ListNode current = head;
+
+        // if head's next is null, it's the end of list
+        while(head.next!=null){
+            // checking head's data with it's next data
+            if(head.data != head.next.data){
+                head = head.next;
+            }else{
+                head.next = head.next.next;
+            }
+        }
+
+        return current;
+    }
+
 
     public static void main(String[]  args) {
 
