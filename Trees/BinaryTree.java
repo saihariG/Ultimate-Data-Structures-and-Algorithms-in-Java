@@ -200,6 +200,21 @@ public class BinaryTree {
         }
     }
 
+    private int heightOfBinaryTree(TreeNode root) {
+        int leftHeight = 0;
+        int rightHeight = 0;
+
+        if(root.left != null) {
+            leftHeight = 1 + heightOfBinaryTree(root.left);
+        }
+
+        if(root.right != null) {
+            rightHeight = 1 + heightOfBinaryTree(root.right);
+        }
+
+        return Math.max(leftHeight, rightHeight);
+    }
+
     public static void main(String[] args) {
 
         BinaryTree binaryTree = new BinaryTree();
