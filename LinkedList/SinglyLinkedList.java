@@ -271,6 +271,27 @@ public class SinglyLinkedList {
         return false;
     }
 
+    // returns node where cycle begins
+    private ListNode detectCycleNode() {
+        ListNode fast = head;
+        ListNode slow = head;
+
+        while(fast != null && fast.next != null) {
+
+            fast = fast.next.next;
+            slow = slow.next;
+
+            if(fast == slow) {
+                ListNode current = head;
+                while(current != slow) {
+                    current = current.next;
+                    slow = slow.next;
+                }
+                return slow;
+            }
+        }
+        return null;
+    }
 
     static boolean compareLists(ListNode head1, ListNode head2) {
 
