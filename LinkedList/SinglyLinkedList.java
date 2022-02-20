@@ -317,7 +317,6 @@ public class SinglyLinkedList {
     }
 
     public static ListNode removeDuplicates(ListNode head) {
-
         // if list is empty or if list contains a single node
         if(head == null || head.next == null){
             return head;
@@ -328,14 +327,13 @@ public class SinglyLinkedList {
 
         // if head's next is null, it's the end of list
         while(head.next!=null){
-            // checking head's data with it's next data
+            // checking head's data with its next data
             if(head.data != head.next.data){
                 head = head.next;
             }else{
                 head.next = head.next.next;
             }
         }
-
         return current;
     }
 
